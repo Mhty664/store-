@@ -257,3 +257,83 @@ input {
   opacity: 1;
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
+
+
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* SEARCH */
+  #search {
+    width: 100%;
+  }
+
+  #search:focus {
+    width: 100%;
+  }
+
+  /* SIDEBAR */
+  .layout {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+    min-height: auto;
+    position: static;
+    margin: 10px 0;
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+  }
+
+  aside button {
+    min-width: 120px;
+  }
+
+  /* PRODUCTS */
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+  }
+
+  /* PRODUCT IMAGE */
+  .product img {
+    height: 140px;
+  }
+
+  /* PRODUCT PAGE */
+  .product-page {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  /* REVIEWS */
+  .review {
+    width: 90%;
+  }
+
+  .review.active {
+    transform: scale(1.1);
+  }
+
+  /* CART ITEMS */
+  .cart-item {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+}
